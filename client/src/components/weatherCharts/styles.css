@@ -1,6 +1,6 @@
 .container {
-    width: 255px;
-    height: 115px;    
+    width: 500px;
+    height: 250px;    
   }
 
   .dark {
@@ -12,11 +12,11 @@
   }
   
   .err-container {
-    padding: 20px;
+    padding: 60px;
     display: flex;
     justify-content: center;
     align-items: center;    
-    font-size: 12px;
+    font-size: 15px;
     flex-direction: column;
   }
     
