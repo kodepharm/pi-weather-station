@@ -7,7 +7,7 @@
   font-family: "Rubik", sans-serif;
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 400px auto 10px;
+  grid-template-rows: 300px auto 10px;
   grid-template-areas:
     "clock"
     "weather-info"

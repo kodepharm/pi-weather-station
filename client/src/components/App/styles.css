@@ -1,10 +1,10 @@
 .container {
   width: 100vw;
   height: 100vh;
-  min-width: 800px;
+  min-width: 700px;
   min-height: 480px;
   display: grid;
-  grid-template-columns: auto 800px;
+  grid-template-columns: auto 700px;
   grid-template-rows: auto;
   grid-template-areas: "map info";
   user-select: none;
