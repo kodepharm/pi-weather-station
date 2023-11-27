@@ -86,7 +86,7 @@ const chartOptions = ({
 
 const chartColors = {
   blue: "rgba(63, 127, 191, 0.5)",
-  gray: "rgba(127, 127, 127, 0.5)",
+  orange: "rgba(226, 99, 71)",
 };
 
 const mapChartData = ({
@@ -125,8 +125,8 @@ const mapChartData = ({
             : convertTemp(temperature, tempUnit);
         }),
         yAxisID: "y-axis-1",
-        borderColor: chartColors.gray,
-        backgroundColor: chartColors.gray,
+        borderColor: chartColors.orange,
+        backgroundColor: chartColors.orange,
         fill: false,
       },
       {
