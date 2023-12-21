@@ -1,0 +1,20 @@
+.custom-data {
+  grid-area: custom;
+  width: 50%;
+  height: 50%;
+}
+
+.data-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.data-table {
+  margin: 1px;
+}
+
+.data-text {
+  color: #f9f7f7; 
+  font-size: 20px; 
+}

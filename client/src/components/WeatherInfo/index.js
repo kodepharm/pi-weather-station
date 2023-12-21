@@ -7,9 +7,9 @@ import CurrentWeather from "~/components/CurrentWeather";
 import DailyChart from "~/components/weatherCharts/DailyChart";
 import HourlyChart from "~/components/weatherCharts/HourlyChart";
 
-const CURRENT_WEATHER_DATA_UPDATE_INTERVAL = 20 * 60 * 1000; //every 20 minutes
+const CURRENT_WEATHER_DATA_UPDATE_INTERVAL = 30 * 60 * 1000; //every 30 minutes
 const HOURLY_WEATHER_DATA_UPDATE_INTERVAL = 60 * 60 * 1000; //every hour
-const DAILY_WEATHER_DATA_UPDATE_INTERVAL = 48 * 60 * 60 * 1000; //every two days
+const DAILY_WEATHER_DATA_UPDATE_INTERVAL = 24 * 60 * 60 * 1000; //every 1 days
 
 /**
  * Creates an interval to call a weather update callback

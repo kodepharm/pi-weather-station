@@ -1,13 +1,27 @@
-.container {
+/* .container {
   width: 100vw;
   height: 100vh;
-  min-width: 700px;
+  min-width: 600px;
   min-height: 480px;
   display: grid;
   grid-template-columns: auto 700px;
   grid-template-rows: auto;
   grid-template-areas: "map info";
   user-select: none;
+  position: relative;
+} */
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  min-width: 700px;
+  min-height: 480px;
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 1fr 1fr; 
+  grid-template-areas: 
+    "map info"
+    "custom info"; 
   position: relative;
 }
 
@@ -21,8 +35,16 @@
 
 .weather-map {
   grid-area: map;
-  width: 100%;
-  height: 100%;
+  width: 50%;
+  height: 50%;
+}
+.custom-data {
+  grid-area: custom;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 10px;
+  
 }
 
 .info-container {

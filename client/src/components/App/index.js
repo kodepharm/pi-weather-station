@@ -5,6 +5,7 @@ import { AppContext } from "~/AppContext";
 import WeatherMap from "~/components/WeatherMap";
 import InfoPanel from "~/components/InfoPanel";
 import Settings from "~/components/Settings";
+import CustomDataDisplay from "../CustomDataDisplay";
 
 import "!style-loader!css-loader!./overrides.css";
 
@@ -37,6 +38,9 @@ const App = () => {
       <div className={styles.container}>
         <div className={styles.settingsContainer}>
           <Settings />
+        </div>
+        <div className={styles.customData}>
+          <CustomDataDisplay />
         </div>
         <div
           className={`${styles.weatherMap} map-container ${
