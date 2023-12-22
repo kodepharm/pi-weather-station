@@ -25,7 +25,7 @@ if (!data) {
   const upcomingData = data
     .filter(item => item.date >= currentDate)
     .sort((a, b) => new Date(a.date) - new Date(b.date))
-    .slice(0, 12);
+    .slice(0, 10);
   
   return (
     <div className={styles.dataContainer}>
