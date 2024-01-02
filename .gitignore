@@ -1,3 +1,5 @@
 node_modules/
 settings.json
 *bundle.min.js
+client/dist/1.bundle.min.js
+client/dist/bundle.min.js
