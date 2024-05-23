@@ -8,6 +8,7 @@ const appName = require("../package.json").name;
 
 const settingsCtrl = require("./settingsCtrl");
 const geolocationCtrl = require("./geolocationCtrl");
+const { getTrain } = require("./train");
 
 const {
   getSettings,
@@ -43,6 +44,7 @@ app.listen(PORT, "localhost", async () => {
   console.log(`${appName} v${ver} has started on port ${PORT}`);
 });
 
+app.get("/train", getTrain);
 app.get("/settings", getSettings);
 app.post("/settings", createSettingsFile);
 app.put("/settings", replaceSettings);
