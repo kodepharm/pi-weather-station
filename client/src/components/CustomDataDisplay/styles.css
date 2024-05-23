@@ -4,10 +4,22 @@
   height: 50%;
 }
 
-.data-container {
+/* .data-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
+} */
+
+.data-container {
+  display: flex;
+}
+
+.one-third {
+  flex: 1;
+}
+
+.two-thirds {
+  flex: 2;
 }
 
 .data-table {
