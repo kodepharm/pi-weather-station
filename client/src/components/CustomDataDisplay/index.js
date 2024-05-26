@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import styles from "./styles.css";
 import schoolClosures from "../../public/custom_data.json";
-// import { fetchTrainUpdates } from "../../../../server/fetchTrainUpdates";
 
 
 const dateOptions = {
@@ -10,39 +9,6 @@ const dateOptions = {
   day: 'numeric'
 };
 
-/**
- *
- */
-export const CustomTrainDisplay = () => {
-  const [traindata, setTrainData] = useState(null);
-
-  useEffect(() => {
-    fetch('http://localhost:8080/api/train-updates')
-      .then(response => response.json())
-      .then(data => setTrainData(data))
-      .catch(error => console.error('Error:', error));
-  }, []);
-
-  return (
-    <div className={styles.oneThird}>
-      <div className={styles.dataText}>
-        <h3 className={styles.dataHeader}>Upcoming MARC trains</h3>
-      </div>
-      {traindata && traindata.map((item) => (
-        <table key={item.id} className={styles.dataTable}>
-          <tbody>
-            <tr>
-              <td className={styles.dataText}>
-                {item.id}
-                {item.trip}
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      ))}
-    </div>
-  );
-};
 
 /**
  *

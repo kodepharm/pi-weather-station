@@ -1,0 +1,78 @@
+// import React, { useState, useEffect } from 'react';
+// import styles from './styles.css';
+
+import React from 'react';
+
+
+/**
+ *
+ */
+export const CustomTrainDisplay = () => {
+    return (
+      <div>
+        <h3>Temporary Content</h3>
+        <p>If you see this, the component is rendering correctly.</p>
+      </div>
+    );
+  };
+
+/**
+ *
+ */
+// export const CustomTrainDisplay = () => {
+//   const [trainData, setTrainData] = useState(null);
+
+//   useEffect(() => {
+//     console.log('Fetching train data...');
+//     fetch('/train')
+//       .then(response => {
+//         if (!response.ok) {
+//           throw new Error('Network response was not ok');
+//         }
+//         return response.json();
+//       })
+//       .then(data => {
+//         console.log('Fetched data:', data); // Log fetched data
+//         if (!Array.isArray(data)) {
+//           throw new Error('Fetched data is not an array');
+//         }
+//         setTrainData(data);
+//       })
+//       .catch(error => {
+//         console.error('Error during fetch:', error);
+//       });
+//   }, []);
+
+//   if (!trainData) {
+//     console.log('No train data yet');
+//     return <div>Loading...</div>;
+//   }
+
+//   if (!Array.isArray(trainData)) {
+//     console.error('Expected trainData to be an array but got:', trainData);
+//     return <div>Data is invalid</div>;
+//   }
+
+//   if (trainData.length === 0) {
+//     return <div>No train data available</div>;
+//   }
+
+//   return (
+//     <div className={styles.oneThird}>
+//       <div className={styles.dataText}>
+//         <h3 className={styles.dataHeader}>Upcoming MARC trains</h3>
+//       </div>
+//       {trainData.map((item) => (
+//         <table key={item.id} className={styles.dataTable}>
+//           <tbody>
+//             <tr>
+//               <td className={styles.dataText}>
+//                 {item.id} - {item.trip}
+//               </td>
+//             </tr>
+//           </tbody>
+//         </table>
+//       ))}
+//     </div>
+//   );
+// };

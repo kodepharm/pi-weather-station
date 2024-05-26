@@ -1,8 +1,8 @@
-.custom-data {
+/* .custom-data {
   grid-area: custom;
   width: 50%;
   height: 50%;
-}
+} */
 
 /* .data-container {
   display: grid;
@@ -10,7 +10,7 @@
   gap: 10px;
 } */
 
-.data-container {
+/* .data-container {
   display: flex;
 }
 
@@ -29,4 +29,54 @@
 .data-text {
   color: #f9f7f7; 
   font-size: 20px; 
+} */
+
+.custom-data {
+  grid-area: custom;
+  width: 50%;
+  height: 50%;
+  border: 1px solid red; /* Temporary border for debugging */
+  background-color: #f0f0f0; /* Temporary background color for debugging */
+}
+
+/* Uncommented the grid-based layout */
+.data-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.data-container {
+  display: flex;
+}
+
+.one-third {
+  flex: 1;
+  border: 1px solid blue; /* Temporary border for debugging */
+  background-color: #e0e0e0; /* Temporary background color for debugging */
+}
+
+.two-thirds {
+  flex: 2;
+  border: 1px solid green; /* Temporary border for debugging */
+  background-color: #d0d0d0; /* Temporary background color for debugging */
+}
+
+.data-table {
+  margin: 1px;
+  border: 1px solid purple; /* Temporary border for debugging */
+  background-color: #f9f9f9; /* Temporary background color for debugging */
+}
+
+.data-text {
+  color: #f9f7f7;
+  font-size: 20px;
+  border: 1px solid orange; /* Temporary border for debugging */
+  background-color: #c0c0c0; /* Temporary background color for debugging */
+}
+
+.dataHeader {
+  color: #000;
+  border: 1px solid black; /* Temporary border for debugging */
+  background-color: #a0a0a0; /* Temporary background color for debugging */
 }
