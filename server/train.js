@@ -1,3 +1,5 @@
+const fetch = require('node-fetch');
+
 async function getTrain(req, res) {
   const { default: fetch } = await import("node-fetch");
   try {
@@ -11,11 +13,13 @@ async function getTrain(req, res) {
     );
 
     const data = await response.json();
-    res.json(data);
+    const entities = data.entity || []; // replace data with "entity" to get live updates of trains
+    res.json(entities); // Send the "entity" array to the frontend
   } catch (error) {
-    res.json({
+    console.error('Error during fetch:', error.message);
+    res.status(500).json({
       status: "error",
-      message: error,
+      message: error.message,
     });
   }
 }
@@ -23,3 +27,4 @@ async function getTrain(req, res) {
 module.exports = {
   getTrain,
 };
+

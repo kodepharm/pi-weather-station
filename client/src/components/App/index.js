@@ -4,8 +4,9 @@ import { AppContext } from "~/AppContext";
 import WeatherMap from "~/components/WeatherMap";
 import InfoPanel from "~/components/InfoPanel";
 import Settings from "~/components/Settings";
-// import {CustomDataDisplay} from "../CustomDataDisplay";
+import {CustomDataDisplay} from "../CustomDataDisplay";
 import { CustomTrainDisplay } from "../CustomDataDisplay/customTrainData";
+// import RouteDisplay from "../CustomDataDisplay/RouteDisplay";
 import "!style-loader!css-loader!./overrides.css";
 
 /**
@@ -39,8 +40,8 @@ const App = () => {
           <Settings />
         </div>
         <div className={styles.customData}>
-          {/* <CustomDataDisplay />  */}
-          <CustomTrainDisplay />
+          <CustomDataDisplay /> <CustomTrainDisplay />
+          {/* <RouteDisplay /> */}
         </div>
         <div
           className={`${styles.weatherMap} map-container ${

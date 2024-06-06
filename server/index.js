@@ -9,6 +9,7 @@ const appName = require("../package.json").name;
 const settingsCtrl = require("./settingsCtrl");
 const geolocationCtrl = require("./geolocationCtrl");
 const { getTrain } = require("./train");
+const {getRoute} = require("./route");
 
 const {
   getSettings,
@@ -45,6 +46,7 @@ app.listen(PORT, "localhost", async () => {
 });
 
 app.get("/train", getTrain);
+app.get("/route", getRoute);
 app.get("/settings", getSettings);
 app.post("/settings", createSettingsFile);
 app.put("/settings", replaceSettings);
