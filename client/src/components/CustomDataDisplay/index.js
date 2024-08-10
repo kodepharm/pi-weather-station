@@ -5,7 +5,7 @@ import schoolClosures from "../../public/custom_data.json";
 
 const dateOptions = {
   year: 'numeric',
-  month: 'long',
+  month: 'short',
   day: 'numeric'
 };
 

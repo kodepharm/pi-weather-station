@@ -28,5 +28,7 @@
 
 .data-text {
   color: #f9f7f7; 
-  font-size: 20px; 
+  font-size: 20px;
+  white-space: nowrap;
 }
+
