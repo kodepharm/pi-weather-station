@@ -54,7 +54,7 @@ export const CustomDataDisplay = () => {
                 {new Date(item.date).toLocaleDateString('en-US', { timeZone: 'America/New_York', ...dateOptions })}
                 </td>
                 <td className={styles.dataText}>
-                  {item.reason}
+                  {item.reason.substring(0, 45)}
                 </td>
               </tr>
             </tbody>
